@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import { LightCursorContent } from '../lightCursorContent'
 import { FaFileAlt, FaGithub, FaLinkedin } from 'react-icons/fa'
+import {
+  RiNextjsLine,
+  RiNodejsFill,
+  RiReactjsLine,
+  RiTailwindCssFill,
+} from 'react-icons/ri'
 
 export function Hero() {
   return (
@@ -46,6 +52,26 @@ export function Hero() {
               construindo soluções eficientes e criativas. Em breve, novos
               projetos estarão disponíveis por aqui!
             </p>
+          </div>
+        </div>
+        <div className="absolute z-50 w-xl bottom-8 left-1/2 -translate-x-1/2">
+          <div className="flex gap-4 p-4 justify-between border border-metal-gray-500 bg-white/10 shadow-2xl rounded-3xl">
+            <div className="flex justify-center flex-col">
+              <RiNextjsLine className="text-5xl text-white text-center w-full" />
+              <h2 className="text-white text-center">NEXT.JS</h2>
+            </div>
+            <div className="flex justify-center flex-col">
+              <RiReactjsLine className="text-5xl text-white text-center w-full" />
+              <h2 className="text-white text-center">REACT.JS</h2>
+            </div>
+            <div className="flex justify-center flex-col">
+              <RiNodejsFill className="text-5xl text-white text-center w-full" />
+              <h2 className="text-white text-center">NODE.JS</h2>
+            </div>
+            <div className="flex justify-center flex-col">
+              <RiTailwindCssFill className="text-5xl text-white text-center w-full" />
+              <h2 className="text-white text-center">TAILWIND</h2>
+            </div>
           </div>
         </div>
       </LightCursorContent>
