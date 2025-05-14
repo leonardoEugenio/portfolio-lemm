@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { Lato } from 'next/font/google'
+import { ToastContainer } from 'react-toastify'
 
-const lato = Lato({ subsets: ['latin'], weight: ['400', '700'] })
+const lato = Lato({ subsets: ['latin'], weight: ['400', '700', '900'] })
 
 export const metadata: Metadata = {
   title: 'Portfolio Leonardo Eugenio Mascarenhas Mantoni',
@@ -17,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`antialiased ${lato.className}`}>{children}</body>
+      <body className={`antialiased ${lato.className}`}>
+        <ToastContainer />
+        {children}
+      </body>
     </html>
   )
 }
